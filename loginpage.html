@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Form</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-toggle">
+            <button id="login-btn" onclick="showLogin()">Login</button>
+            <button id="register-btn" onclick="showRegister()">Register</button>
+        </div>
+        <form id="login-form" class="form">
+            <h2>Login</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <div class="form-bottom">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <form id="register-form" class="form hidden">
+            <h2>Register</h2>
+            <input type="text" placeholder="Username" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <div class="form-bottom">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function showLogin() {
+            document.getElementById('login-form').classList.remove('hidden');
+            document.getElementById('register-form').classList.add('hidden');
+        }
+        
+        function showRegister() {
+            document.getElementById('register-form').classList.remove('hidden');
+            document.getElementById('login-form').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
