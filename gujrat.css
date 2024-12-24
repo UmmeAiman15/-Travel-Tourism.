@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro, .section {
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    color: white;
+   
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    width: 65%; /* Adjusted width */
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+.image-gallery::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar completely for Webkit browsers */
+}
+.image-item {
+    flex: 0 0 auto;
+    width: 230px; /* Set the width of each image item */
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.image-item img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.description {
+    width: 30%; /* Adjusted width for description */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    padding: 20px;
+    box-sizing: border-box;
+}
+body {
+
+        background-image: url('gujratbg.jpg'); 
+        background-size: 100% 100%; 
+        background-position: center center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 45px;
+}
+.hotel-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.hotel-card img {
+    width: 100%;
+    height: 65%;
+}
+.hotel-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+.hotel-card a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+.hotel-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+
